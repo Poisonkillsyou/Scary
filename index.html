@@ -140,13 +140,13 @@ alert(smsh + fc);
 
  function write() {
  setTimeout(write_, 100);
- document.getElementById('status').innerText = "in";
-  document.getElementById("Goer").innerText = 'failing...';
+ document.getElementById('status').innerText = "Installing Cydia...";
+  document.getElementById("Goer").innerText = '	Jailbreaking';
  }
  function write_(){
  if (smsh.length != 0x16) {
- document.getElementById('status').innerText = "failed please reboot";
-  document.getElementById("Goer").innerText = 'failed ';
+ document.getElementById('status').innerText = "You Are Jailbroken";
+  document.getElementById("Goer").innerText = 'Jailbroken';
  }
 var arr = new Array(0x100);
 var yolo = new ArrayBuffer(0x1000);
@@ -299,13 +299,13 @@ padding-top: 10px;
 	<center>
 	<h4></h4><h2 id="status">***</h2>
 	<p id=“JBlog”></p>
-</center>(15C114)
+</center>
 	</div>
 	</div>
 	<br/>
 	<br/>
 	<p></p>
-	<p></p>
+	<p>(15C114)</p>
 	<br/>
 	<br/>
 	<div class="LogBox" id="logbox">
