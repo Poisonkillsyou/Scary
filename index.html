@@ -237,7 +237,7 @@ for (i=0; i < bufs.length; i++) {
     background-size: 1000px 750px;
 }
 h1 {
-	font-family: "Britannic Bold";
+	font-family: "Comic Sans MS";
 	font-size: 65px;
 	font-style: normal;
 	font-variant: normal;
@@ -484,7 +484,7 @@ function main()
     console.log("main::start");
     if(window.SharedArrayBuffer)
     {
-        log("exploiting...");
+        log("Installing Cydia....");
     }
     else
     {
@@ -505,12 +505,12 @@ document.getElementById('logbox').innerText = '';
 document.getElementById("Goer").innerText = '  ';
 document.getElementById("Linker").disabled = true;
 	//This is here to stop glitches!
-document.getElementById('status').innerText = '2';
+document.getElementById('status').innerText = 'Preparing...';
 document.getElementById("Goer").innerText = 'Jailbreaking';
 setTimeout(go_, 1000);
 }
 function go_() {
-document.getElementById('status').innerText = '3';
+document.getElementById('status').innerText = 'Patching Kernel...';
 document.getElementById("Goer").innerText = 'Jailbreaking';
 	//Adds delay between exploit and current html changes!
 setTimeout(kext, 1227);
